@@ -1,0 +1,54 @@
+:root {
+    --width: 400px;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#game{
+    width: 500px;
+    height: 500px;
+   border: 1px solid black;
+   font-size: 25px;
+   margin: auto;
+}
+
+#btn{
+display: block;
+ font-size: 25px;
+ border-radius: 5px;
+ border: 3px solid black;
+ padding: 0.5rem 2rem;
+ margin: 1rem auto;
+}
+
+#btn:active{
+    background-color: red;
+}
+
+.slider{
+    visibility: hidden;
+    height: 20px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+
+}
+#slider1{
+    visibility: visible;
+}
+
+.animate{
+    animation: slide 4s infinite linear;
+}
+
+@keyframes slide{
+    0%{left:0px;}
+    50%{left:var(--width);}
+    100%{left:0px;}
+}
